@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playground_api", "playground_api\playground_api.csproj", "{EF0A3456-9363-4FB7-AE38-5687A6D3D829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF0A3456-9363-4FB7-AE38-5687A6D3D829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0A3456-9363-4FB7-AE38-5687A6D3D829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0A3456-9363-4FB7-AE38-5687A6D3D829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0A3456-9363-4FB7-AE38-5687A6D3D829}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E38F7C0F-D8AF-4FA2-9EA0-220B7B1D0D99}
+	EndGlobalSection
+EndGlobal
