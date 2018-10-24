@@ -1,5 +1,7 @@
 ﻿using System;
 using playground_api.CustomEnumerator;
+using playground_api.Employee;
+using playground_api.Vehicles;
 
 namespace playground_api
 {
@@ -31,10 +33,10 @@ namespace playground_api
             Playground.Days currDay = Playground.Days.Monday;
             playground.GreetOnDay(currDay);
 
-            Rectangle newRect = new Rectangle(@"Original Rectangle Info", 1, 2);
+            Rectangle<int> newRect = new Rectangle<int>(@"Original Rectangle Info", 1, 2);
             Console.WriteLine(@"Original Rect Message");
             newRect.Message();
-            Rectangle copyRect = newRect;
+            Rectangle<int> copyRect = newRect;
             copyRect.rectInfo.InfoString = @"Modified Rectangle Info";
             Console.WriteLine(@"Copy Rect Message");
             copyRect.Message();
@@ -51,7 +53,7 @@ namespace playground_api
             var(first, _, last) = splitNames.SplitNames("Vaibhav Ramesh Panchal");
             Console.WriteLine($"{first} {last}");
 
-            Point deconstructedTuple = new Point(30.0f, 40.0f);
+            Point<double> deconstructedTuple = new Point<double>(30.0f, 40.0f);
             var (xPos, yPos, color) = deconstructedTuple.Deconstruct();
             Console.WriteLine($"xPos : {xPos}, yPos : {yPos}, color : {color}");
 
@@ -83,7 +85,16 @@ namespace playground_api
             //EnumDemo.Demo();
             //EnumDemo.DemoCustomerEnumerator();
             EnumDemo.DemoYield();
+            EmployeeDemo.DemoSortedSet();
+
+            Calculator<int>.CalculatorDemo();
+
+            CarDemo carDemo = new CarDemo();
+            carDemo.DemoEvents();
+
             Console.ReadKey();
+
+
 
             return 0;
         }

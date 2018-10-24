@@ -5,12 +5,12 @@ using playground_api.Interfaces.Draw;
 
 namespace playground_api
 { 
-    struct Rectangle : IPointy, IDraw3D, IDrawHologram
+    struct Rectangle<T> : IPointy<T>, IDraw3D, IDrawHologram
     {
 
         public byte Points => TOTAL_RECT_POINTS;
 
-        public Rectangle(string newRectInfo, int PointX, int PointY)
+        public Rectangle(string newRectInfo, T PointX, T PointY)
         {
             rectInfo = new ShapeInfo(newRectInfo);
             X = PointX;
@@ -44,8 +44,8 @@ namespace playground_api
         }
 
         public ShapeInfo rectInfo;
-        public int X;
-        public int Y;
+        public T X;
+        public T Y;
         const byte TOTAL_RECT_POINTS = 4;
     }
 }

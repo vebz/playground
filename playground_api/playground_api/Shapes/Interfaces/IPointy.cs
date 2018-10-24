@@ -4,7 +4,7 @@ using System.Text;
 
 namespace playground_api
 {
-    public interface IPointy
+    public interface IPointy<T>
     {
         byte GetNumberOfPoints();
 

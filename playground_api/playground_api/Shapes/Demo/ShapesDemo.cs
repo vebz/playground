@@ -15,24 +15,24 @@ namespace playground_api
 
         public static void DemoInteface()
         {
-            IPointy pointy = null;
+            IPointy<int> pointy = null;
 
-            Point newPoint = new Point(10, 20);
-            Rectangle newRect = new Rectangle("newRect", 20, 30);
+            Point<int> newPoint = new Point<int>(10, 20);
+            Rectangle<int> newRect = new Rectangle<int>("newRect", 20, 30);
 
-            pointy = newPoint as IPointy;
+            pointy = newPoint as IPointy<int>;
 
             if(null != pointy)
                 pointy.Description();
             
-            pointy = newRect as IPointy;
+            pointy = newRect as IPointy<int>;
             if (null != pointy)
                 pointy.Description();
         }
 
         public static void DemoExplicitInterface()
         {
-            Rectangle rectangle = new Rectangle("Rectangle With Explicit Inteface Implementation", 10, 30);
+            Rectangle<int> rectangle = new Rectangle<int>("Rectangle With Explicit Inteface Implementation", 10, 30);
             IDraw3D draw = rectangle as IDraw3D;
 
             if(draw != null)
