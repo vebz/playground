@@ -16,14 +16,8 @@ namespace playground_api.Vehicles
 
         public DateTime ModelYear { get; set; } = DateTime.MinValue;
 
-        public delegate void CarEngineHandler(string message);
-        public delegate void EngineHandler(object sender, CarEventArgs e);
-
-        public event CarEngineHandler Exploded;
-        public event CarEngineHandler AboutToBlow;
-
-        public event EngineHandler EngineExploded;
-        public event EngineHandler EngineAboutToBlow;
+        public event EventHandler<CarEventArgs> EngineExploded;
+        public event EventHandler<CarEventArgs> EngineAboutToBlow;
 
         public CarStatus Status { get; set; } = CarStatus.Alive;
 

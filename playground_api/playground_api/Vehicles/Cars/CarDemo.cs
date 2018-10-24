@@ -9,10 +9,6 @@ namespace playground_api.Vehicles
         public void DemoEvents()
         {
             Car newCar = new Car("Bugs Bunny", DateTime.Now);
-            //newCar.Exploded += new Car.CarEngineHandler(this.OnExploded);
-            //newCar.AboutToBlow += new Car.CarEngineHandler(this.OnAboutToBlow);
-            newCar.Exploded += OnNewCarExploded;
-            newCar.AboutToBlow += OnNewCarAboutToBlow;
             newCar.EngineExploded += OnNewCarEngineExploded;
             newCar.EngineAboutToBlow += OnNewCarEngineAboutToBlow;
             
