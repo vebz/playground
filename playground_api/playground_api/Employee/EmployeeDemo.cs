@@ -13,10 +13,6 @@ namespace playground_api.Employee
             Person usha = new Person { firstName = "Usha", lastName = "Panchal", age = 45 };
             Person ramesh = new Person { firstName = "Ramesh", lastName = "Panchal", age = 52 };
 
-            int one = 1;
-            int two = 2;
-
-
             SortedSet<Person> people = new SortedSet<Person>(new SortPeopleByAge())
             {
                 new Person {firstName = "Vebz", lastName = "Panchal", age = 28},

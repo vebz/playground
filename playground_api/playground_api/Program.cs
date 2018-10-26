@@ -1,6 +1,8 @@
 ﻿using System;
 using playground_api.CustomEnumerator;
 using playground_api.Employee;
+using playground_api.Numbers;
+using playground_api.Shapes.Classes;
 using playground_api.Vehicles;
 
 namespace playground_api
@@ -76,7 +78,9 @@ namespace playground_api
                 Console.WriteLine(e.TargetSite);
                 Console.WriteLine(e.StackTrace);
                 Console.WriteLine("===Speed Exception===");
+                Console.ForegroundColor = ConsoleColor.White;
             }
+
 
             // Interface
             //ShapesDemo.DemoInteface();
@@ -92,6 +96,12 @@ namespace playground_api
             CarDemo carDemo = new CarDemo();
             carDemo.DemoEvents();
 
+
+            NumberDemo.LamdaDemo();
+
+            PersonCollection.PersonCollectionDemo();
+
+            RectangleFloat.CastDemo();
             Console.ReadKey();
 
 

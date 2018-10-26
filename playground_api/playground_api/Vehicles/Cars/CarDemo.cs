@@ -11,8 +11,22 @@ namespace playground_api.Vehicles
             Car newCar = new Car("Bugs Bunny", DateTime.Now);
             newCar.EngineExploded += OnNewCarEngineExploded;
             newCar.EngineAboutToBlow += OnNewCarEngineAboutToBlow;
-            
-            for(int i = 0; i < 100.0f; i++)
+
+            newCar.EngineExploded += delegate
+            {
+                Console.WriteLine("Lambda exploded");
+            };
+
+            newCar.EngineExploded += delegate(object sender, CarEventArgs e)
+            {
+                if(sender is Car car)
+                {
+                    Console.WriteLine("{0} has now exploded", car.Name);
+                }
+            };
+
+
+            for (int i = 0; i < 100.0f; i++)
             {
                 if (newCar.Status == CarStatus.Dead)
                 {
