@@ -8,12 +8,10 @@ namespace playground_api.CustomEnumerator
     public class Bikes : IBike
     {
         DateTime modelYear = DateTime.MinValue;
-        string bikeName;
-        double bikePrice;
 
         DateTime IBike.ModelYear { get => default; set => modelYear = value; }
-        public string BikeName { get => bikeName; set => bikeName = value; }
-        public double Price { get => bikePrice; set => bikePrice = value; }
+        public string BikeName { get; set; }
+        public double Price { get; set; }
 
         public Bikes(string bikeName = "", DateTime? bikeModelYear = null, double price = double.MinValue)
         {

@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playground_api", "playground_api\playground_api.csproj", "{EF0A3456-9363-4FB7-AE38-5687A6D3D829}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "playground_api", "playground_api\playground_api.csproj", "{EF0A3456-9363-4FB7-AE38-5687A6D3D829}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqPlayground", "LinqPlayground\LinqPlayground.csproj", "{A5A616A1-E306-40F2-8568-5E00F6FD669E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncPlayground", "AsyncPlayground\AsyncPlayground.csproj", "{0C7FCBCE-812E-4476-93C0-1982969794B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EF0A3456-9363-4FB7-AE38-5687A6D3D829}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF0A3456-9363-4FB7-AE38-5687A6D3D829}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF0A3456-9363-4FB7-AE38-5687A6D3D829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A616A1-E306-40F2-8568-5E00F6FD669E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A616A1-E306-40F2-8568-5E00F6FD669E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A616A1-E306-40F2-8568-5E00F6FD669E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A616A1-E306-40F2-8568-5E00F6FD669E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7FCBCE-812E-4476-93C0-1982969794B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7FCBCE-812E-4476-93C0-1982969794B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7FCBCE-812E-4476-93C0-1982969794B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7FCBCE-812E-4476-93C0-1982969794B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
